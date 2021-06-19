@@ -15,7 +15,7 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-""" STEP TWO """
+""" BƯỚC 2 """
 
 import requests
 
@@ -25,8 +25,8 @@ def login_step_get_stel_cookie(
         tg_random_hash,
         tg_cloud_password
 ):
-    """Logins to my.telegram.org and returns the cookie,
-    or False in case of failure"""
+    """Đăng nhập vào my.telegram.org và trả về cookie,
+     hoặc Sai trong trường hợp thất bại"""
     request_url = "https://my.telegram.org/auth/login"
     request_data = {
         "phone": input_phone_number,
