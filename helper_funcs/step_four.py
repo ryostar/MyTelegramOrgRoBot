@@ -15,7 +15,7 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-""" STEP FOUR """
+""" BƯỚC 4 """
 
 import random
 import requests
@@ -31,8 +31,8 @@ def create_new_tg_app(
         app_desc
 ):
     # pylint: disable-msg=too-many-arguments
-    """ creates a new my.telegram.org/apps
-    using the provided parameters """
+    """ tạo một my.telegram.org/apps mới
+     sử dụng các thông số được cung cấp """
     request_url = "https://my.telegram.org/apps/create"
     custom_header = {
         "Cookie": stel_token
