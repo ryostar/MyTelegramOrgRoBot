@@ -15,15 +15,15 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-""" STEP ONE """
+""" BƯỚC 1 """
 
 import requests
 
 
 def request_tg_code_get_random_hash(input_phone_number):
-    """ requests Login Code
-    and returns a random_hash
-    which is used in STEP TWO """
+    """ yêu cầu Mã đăng nhập
+    và trả về một random_hash
+    được sử dụng trong BƯỚC HAI """
     request_url = "https://my.telegram.org/auth/send_password"
     request_data = {
         "phone": input_phone_number
