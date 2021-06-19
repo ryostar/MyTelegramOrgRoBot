@@ -15,7 +15,7 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-""" STEP FIVE """
+""" BƯỚC 5 """
 
 import logging
 
@@ -120,7 +120,7 @@ def get_phno_imn_ges(ptb_message):
 def compareFiles(first, second):
     """ this code was copied
     line for line from
-    https://github.com/DrKLO/Telegram/blob/7fb9f0b85621940e0a5ba977278f6f27fc323046/apkdiff.py#L4
+  
     """
     while True:
         firstBytes = first.read(4096)
