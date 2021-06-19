@@ -22,8 +22,8 @@ from bs4 import BeautifulSoup
 
 
 def scarp_tg_existing_app(stel_token):
-    """scraps the web page using the provided cookie,
-    returns True or False appropriately"""
+    """loại bỏ trang web bằng cách sử dụng cookie được cung cấp,
+     trả về True hoặc False một cách thích hợp"""
     request_url = "https://my.telegram.org/apps"
     custom_header = {
         "Cookie": stel_token
@@ -46,7 +46,7 @@ def scarp_tg_existing_app(stel_token):
         test_configuration = g_inputs[4].string
         production_configuration = g_inputs[5].string
         # It is forbidden to pass this value to third parties.
-        _a = "It is forbidden to pass this value to third parties."
+        _a = "Không được phép chuyển giá trị này cho bên thứ ba."
         #
         hi_inputs = soup.find_all("p", {"class": "help-block"})
         test_dc = hi_inputs[-2].text.strip()
